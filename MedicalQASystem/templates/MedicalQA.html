@@ -1,0 +1,25 @@
+<!--/MedicalQA.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+    <div id="container" style="width:400px;align-items: center;margin:0 auto;">
+        <div id="header" style="background-color:#778899;text-align:center">
+        <h1 style="margin-bottom:0;">MedicalQASystem</h1>
+        </div>
+	<form  method="post" action="">
+        {% csrf_token %}
+        <div id="content" style="background-color:#EEEEEE;height:400px;width:400px;float:left;">
+            <p>{{html_data_name}}</p>
+        </div>
+
+        <input type="text" name="html_data_to_views_name" style="width:340px" value="">
+        <input type="submit" value="查询">
+        <div id="footer" style="background-color:#B0C4DE;clear:both;text-align:center;">
+如有问题请联系wenius@qq.com</div>
+    </form>
+    </div>
+</body>
+</html>
